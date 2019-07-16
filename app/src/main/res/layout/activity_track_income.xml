@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Timers-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/money_earned"
+            android:layout_gravity="center_horizontal"
+            android:textSize="60dp"
+    />
+    <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="60sp"
+            android:layout_gravity="center_horizontal"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_worked"
+            android:textSize="60sp"
+            android:layout_gravity="center_horizontal"
+    />
+    <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="60dp"
+            android:layout_gravity="center_horizontal"
+    />
+    <Button
+            android:text="@string/pause"
+            android:layout_width="match_parent"
+            android:layout_height="117dp" android:id="@+id/pause_resume_button" android:background="@color/colorAccent"/>
+    <Button
+            android:text="@string/end_workday"
+            android:layout_width="match_parent"
+            android:layout_height="117dp" android:id="@+id/end_work" android:background="@color/colorPrimary"/>
+</LinearLayout>
+
+

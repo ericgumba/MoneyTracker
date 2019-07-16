@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Timers-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total earnings"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/total_earnings"
+            android:textSize="30sp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total time worked "
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_time_worked"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+    />
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prev" android:id="@+id/prev"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="placeholder "
+                android:id="@+id/date"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+        />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" android:id="@+id/next"/>
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/money_earned_for_specific_day"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/time_worked_for_specific_day"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+    />
+    <Button
+            android:text="@string/settings"
+            android:layout_width="match_parent"
+            android:layout_height="117dp" android:id="@+id/settings" android:background="@color/colorAccent"/>
+    <Button
+            android:text="@string/start_work"
+            android:layout_width="match_parent"
+            android:layout_height="117dp" android:id="@+id/start_work" android:background="@color/colorPrimary"/>
+</LinearLayout>
+
+

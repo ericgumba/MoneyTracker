@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prev" android:id="@+id/prev"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="placeholder"
+                android:id="@+id/date"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+        />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" android:id="@+id/next"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hours:"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/hours_worked" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="    New Hours: "/>
+    <android.support.design.widget.TextInputEditText
+            android:layout_width="100dp"
+            android:inputType="number"
+            android:layout_height="117dp" android:id="@+id/new_hours_worked"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Minutes:"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/minutes_worked" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="    New Minutes: "/>
+    <android.support.design.widget.TextInputEditText
+            android:inputType="number"
+            android:layout_width="100dp"
+            android:layout_height="117dp" android:id="@+id/new_minutes_worked"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Money:"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/money" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="    New Money Earned: "/>
+    <android.support.design.widget.TextInputEditText
+            android:inputType="number"
+            android:text=" "
+            android:layout_width="100dp"
+            android:layout_height="117dp" android:id="@+id/new_money_earned"/>
+
+    </LinearLayout>
+
+    <Button android:layout_width="402dp" android:layout_height="86dp" android:text="Include Overtime / Double Time"
+            android:id="@+id/overtime"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="78dp" android:text="@string/submit"
+            android:id="@+id/submit"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="@string/back"
+            android:id="@+id/back"/>
+
+
+</LinearLayout>
